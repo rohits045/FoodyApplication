@@ -1,0 +1,64 @@
+
+<div class="containar mt-5">
+    <div class="row">
+        <div class="col-lg-12">
+             
+          <div class="bg-light text-black p-2 m-3" >
+            <h2>Restaurant List</h2>
+           </div>
+            <table class="table table-bordered table-striped  p-2 mx-5" >
+                <thead >
+                  <tr class="mx-5">
+                    <!-- <th scope="col">#</th> -->
+                    <th>Restaurant-Image</th>
+                    <th scope="col">Restaurant-Name</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Rating</th>
+          <th scope="col">Type Of Restaurant</th>
+          <th scope="col">Address Of Restauant </th>
+                  </tr>
+                </thead>
+                <tbody>
+                    
+                        <tr *ngFor="let fav of fav_RestaurantData">
+                            <!-- <th scope="row"></th> -->
+                            <td><img  class="rounded float-start myimg pb-2" mat-card-image [src]="'data:image/jpeg;base64,' +fav.picByte" alt="" > </td>
+                            <td>{{fav.restaurantName}}</td>
+                            <td>{{fav.restaurantLocation}}</td>
+                            <td>{{fav.restaurant_rating}}</td>
+                            <td> {{fav.typeOfRestaurant}} </td>
+                            <td> {{fav.addressOfRestaurant}} </td>
+                          </tr>
+                   
+                 
+               
+                </tbody>
+              </table>
+              <!-- <div class="float-end mx-5"><button class="btn btn-primary" routerLink="/user-profile">Back</button></div> -->
+              <table class="table table-bordered table-striped mt-3  p-5 mx-5" > 
+                <thead>
+                  <tr>
+                    <th scope="col">Cuisine Image</th>
+                    <th >Cuisine-Name</th>
+                    <th >Price (Rs)</th>
+                    <th >Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    
+                        <tr *ngFor="let fav of favCuisine">
+                            <!-- <th scope="row"></th> -->
+                            <td><img  class="rounded float-start myimg pb-2" mat-card-image [src]="'data:image/jpeg;base64,' +fav.image" alt="" > </td>
+                            <td>{{fav.cuisineName}}</td>
+                            <td>{{fav.price}}</td>
+                            <td>{{fav.cuisineDescription}}</td>
+                          </tr>
+                   
+                 
+               
+                </tbody>
+              </table>
+              <button class="btn btn-primary" routerLink="/view-restaurant">Back</button>
+            </div>
+    </div>
+    </div>

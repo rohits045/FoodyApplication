@@ -1,0 +1,85 @@
+
+<div class="containar">
+    <div class="row">
+        <div class="col-lg-12">
+             
+       <div class="bg-light text-black p-2 m-3" >
+        <h2>Favourite Cuisione List</h2>
+       </div>
+            <table class="table table-bordered table-striped mt-3  p-5 mx-5" > 
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th >Cuisine-Name</th>
+                    <th >Price (Rs)</th>
+                    <th scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    
+                        <tr *ngFor="let fav of favCuisine">
+                            <th scope="row"></th>
+                            <td>{{fav.cuisineName}}</td>
+                            <td>{{fav.price}}</td>
+                            <td>{{fav.cuisineDescription}}</td>
+                          </tr>
+                   
+                 
+               
+                </tbody>
+              </table>
+              <div><button class="btn btn-primary" routerLink="/user-profile">Back</button></div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p>fav-cousine works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 modal" id="myModal">
+            <div class="modal-dialog ">
+                <form [formGroup]="RegisterData" enctype="multipart/form-data"  class="modal-content p-2 px-5 form-control">
+                    <label for="menu_id" class="form-label">Menu Id</label>
+                    <input type="text" placeholder="menu_id" formControlName="cuisineId" class="form-control">
+                               
+                     <label for="recipe_name" class="form-label">Recipe Name</label>
+                    <input type="text" placeholder="recipe_name" formControlName="cuisineName" class="form-control">
+                              
+                    <label for="recipe_image" class="form-label">Recipe Image</label>
+                    <input type="file" (change)="onChangeFileFiled($event)" placeholder="image" formControlName="recipe_image" class="form-control">
+                    
+                    <label for="price" class="form-label">Price</label>
+                    <input type="text" placeholder="price" formControlName="price" class="form-control">
+                           
+                    <label for="qty" class="form-label">Qty</label>
+                    <input type="text" placeholder="qty" formControlName="qty" class="form-control">
+                         
+                    <label for="DishDescription" class="form-label">Dish-Description</label>
+                    <input type="text" placeholder="DishDescription" formControlName="cuisineDescription" class="form-control">
+                            
+                    <button class="btn btn-primary" (click)="addMenu(RegisterData)" >Add menu</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->

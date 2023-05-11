@@ -1,0 +1,111 @@
+#scooter{
+max-width:80px;
+}
+#scooter1{
+    max-width:120px;
+    }
+.firstImg{
+    background-color: rgb(238, 205, 162);
+    clip-path: circle();
+    padding: 1em;
+}
+.firstImg2{
+    background-color: lightgray;
+    clip-path: circle();
+    padding: 1em;
+}
+.firstImg3{
+    box-shadow: 5px 15px 15px rgb(133, 129, 133);
+
+    background-color:rgb(255, 187, 0);
+    clip-path: circle();
+    padding: 2em;
+}
+.firstImg4{
+    box-shadow: 5px 15px 15px rgb(133, 129, 133);
+    /* background-color: rgba(255, 255, 255, 0.434); */
+    clip-path: circle();
+    padding: 2em;
+}
+/* ---------------------------------------------------------------------- */
+.name
+{
+font-weight: bolder;
+font-family: "Metropolis";
+font-size:larger;
+padding: 1em;
+}
+.space
+{
+flex: auto;
+
+}
+.rating
+{
+/* margin-top: 20px;
+margin-bottom: 20px; */
+font-size: large;
+color: white;
+
+
+} 
+.grade
+{
+color: rgb(236, 236, 236);
+font-size:15px;
+margin-left: -17px;
+
+}
+.subtitle
+{
+height:30px ;
+border-radius: 10%;
+}
+.veg
+{
+font-size: 20px;
+font-weight: bolder;
+font-family: "Metropolis";
+}
+.add
+{
+font-size: 20px;
+font-weight: bolder;
+font-family: "Metropolis";   
+}
+.card:hover
+{
+transform: scale(1.1);
+box-shadow: 5px 15px 15px rgb(133, 129, 133);
+transform: scale(1.1.5);
+}
+.card
+{
+transition: all 0.4s; 
+border-radius: 5%;
+}
+.images
+{
+height: 250px;
+}
+ .image:hover
+{
+transform: scale(1.5);
+} 
+/* ----------------------- */
+mat-icon{
+    /* padding: 1em; */
+     font-size:1em;
+    /* color: white; */
+    /* display: inline; */
+    }
+    /* ------------------------------search bar cssss----------------------- */
+    
+    /* .active-pink-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
+    }
+    .active-pink input[type=text] {
+    border-bottom: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
+    } */

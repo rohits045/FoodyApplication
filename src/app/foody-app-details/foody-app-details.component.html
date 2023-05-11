@@ -1,0 +1,33 @@
+<div class="container">
+<div class="row">
+    <div class="col-lg-12 p-2 text-center">
+        <h3>All Details</h3>
+    </div>
+        
+    <table class="table table-bordered table-striped  p-2 mx-5" >
+        <thead >
+          <tr class="mx-5">
+            <!-- <th scope="col">#</th> -->
+            <th scope="col">Email-Id</th>
+            <!-- <th scope="col">Password</th> -->
+            <th scope="col">Role</th>
+             <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+            
+                <tr *ngFor="let fav of AllUsersData" >
+                    <!-- <th scope="row"></th> -->
+                    <td>{{fav?.emailId}}</td>
+                    <!-- <td>{{fav.password}}</td> -->
+                    <td>{{fav?.role}}</td>
+                    <td><mat-icon (click)="deleteSpecific_account(fav?.emailId)">delete</mat-icon></td>
+                  </tr>
+            
+        </tbody>
+        
+      </table>
+      <button class="btn btn-primary" routerLink="/foody-admin">Back</button>
+
+</div>
+</div>

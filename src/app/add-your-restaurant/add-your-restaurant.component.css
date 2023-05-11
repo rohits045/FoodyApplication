@@ -1,0 +1,81 @@
+#restaurantBg{
+    background-image: url(../../assets/images/add-restaurant.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+a{
+    color: white;
+}
+#btnTag{
+    justify-content: center;
+}
+mat-icon{
+    background-color: rgb(49, 159, 49);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    margin-right: 10px;
+}
+.example-card {
+    max-width: 800px;
+
+  }
+#f1{
+    justify-content: center;
+    display: flex;
+   margin-top: 2em;
+}
+
+#contant-heading{
+    background-color: antiquewhite;
+    margin-top: 6em;
+    text-align: center;
+}
+#contant-heading2{
+    background-image: url(../../assets/add-retaurant-image/meat-plate.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;  
+      margin-top: 2em auto;
+    margin-bottom: 13em auto;
+    text-align: center;
+   
+}
+.f2{
+    font-size:2em auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+/* ---------------image card------------ */
+h5{
+    font-weight: lighter;
+}
+#imgp1{
+    border: 1px solid rgb(236, 236, 18);
+    border-radius: 70%;
+    max-height: 100px;
+    max-width: 100px;
+      
+}
+/* mat-card-avatar{
+    border: 1px solid rgb(236, 236, 18);
+    border-radius: 70%;
+    max-height: 100px;
+    max-width: 100px;
+} */
+#p1{
+    max-width:350px;
+    max-height: 400px; 
+}
+/* ----------------------------- */
+/* .example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  } */

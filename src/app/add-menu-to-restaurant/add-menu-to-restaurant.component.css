@@ -1,0 +1,42 @@
+.media-element
+{
+    text-align: center;
+}
+img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.media-scroller
+{
+    display: flex;
+    grid-auto-flow: column;
+    grid-auto-columns: 20%;
+    gap:40px;
+    overflow-x:auto;
+    overscroll-behavior-inline:contain ;
+    background-color: wheat;
+    padding: 15px;
+}
+.snaps-inline
+{
+    scroll-snap-type: inline mandatory ;
+}
+.snaps-inline > *
+{
+    scroll-snap-align: start;
+}
+h4
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bolder;
+}
+.mytitle
+{
+    font-size: 30px
+}

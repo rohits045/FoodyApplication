@@ -1,0 +1,110 @@
+#bg{
+  background-image:linear-gradient(rgba(71, 69, 69, 0.5),
+  rgba(0, 0, 0, 0.5)),url(../../assets/kai-pilger-tL92LY152Sk-unsplash.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 500px;
+/* margin-top: 5em; */
+}
+h2,h5{
+/* text-shadow: -2px 0 black, 0 2px black, 1px 0 black, 0 -1px black; */
+font-size: 3em;
+}
+#myImg{
+  max-width: 180px;
+  transition: all 0.4s; 
+border-radius: 5%;
+}
+mat-input{
+font-size: larger;
+padding: 2em;
+}
+mat-icon{
+padding: 1.2em;
+ font-size:2em;
+color: white;
+display: inline;
+}
+/* ------------------------------search bar cssss----------------------- */
+
+.active-pink-2 input[type=text]:focus:not([readonly]) {
+border-bottom: 1px solid #f48fb1;
+box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-pink input[type=text] {
+border-bottom: 1px solid #f48fb1;
+box-shadow: 0 1px 0 0 #f48fb1;
+}
+/* .mytitle
+{
+display: flex;
+
+width: 300px; margin-top: -20px;
+margin-left: -15px; 
+border: 2px solid red;
+
+} */
+.name
+{
+font-weight: bolder;
+font-family: "Metropolis";
+font-size:larger;
+}
+.space
+{
+flex: 1 1  auto;
+
+}
+.rating
+{
+/* margin-top: 20px;
+margin-bottom: 20px; */
+font-size: large;
+color: white;
+
+
+} 
+.grade
+{
+color: rgb(236, 236, 236);
+font-size:15px;
+margin-left: -17px;
+
+}
+.subtitle
+{
+height:30px ;
+border-radius: 10%;
+}
+.veg
+{
+font-size: 20px;
+font-weight: bolder;
+font-family: "Metropolis";
+}
+.add
+{
+font-size: 20px;
+font-weight: bolder;
+font-family: "Metropolis";   
+}
+.card:hover
+{
+transform: scale(1.1);
+box-shadow: 5px 15px 15px rgb(133, 129, 133);
+transform: scale(1.1.5);
+}
+.card
+{
+transition: all 0.4s; 
+border-radius: 5%;
+}
+.images
+{
+height: 250px;
+}
+ .image:hover
+{
+transform: scale(1.5);
+} 
