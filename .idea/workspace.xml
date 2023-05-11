@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="257a382a-5b11-4098-9b1b-c94216c4504e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2LlKP5qZzaJ6lyIhV0FZN8tP3sk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "C:/capstone proj/FoodieApp-BackendApp/RestaurantAdmin/src/test/java",
+    "last_opened_file_path": "C:/FoodieApp-BackendApp_n",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\FoodieApp-BackendApp_n" />
+      <recent name="C:\FoodieApp-BackendApp_n\User-Services\src\main\java\foodieapp\UserServices" />
+      <recent name="C:\FoodieApp-BackendApp_n\NotificationService\src\main\java\org\niir\NotificationService\service" />
+      <recent name="C:\FoodieApp-BackendApp_n\NotificationService\src\main\java\org\niir\NotificationService\config" />
+      <recent name="C:\FoodieApp-BackendApp_n\NotificationService\src\main\java\org\niir\NotificationService\domain" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.foody.RestaurantAdmin.services" />
+      <recent name="com.CapstoneProject.CustomerService.services" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.niir.NotificationService.controller" />
+      <recent name="com.foody.RestaurantAdmin.config" />
+      <recent name="com.CapstoneProject.CustomerService.domain" />
+      <recent name="org.niir.NotificationService.config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.NotificationServiceApplication">
+    <configuration name="AuthServicesApplication" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.foody.authservices.AuthServicesApplication" />
+      <module name="auth-services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.foody.authservices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.niit.EurekaServer.EurekaServerApplication" />
+      <module name="EurekaServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.niit.EurekaServer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.niir.NotificationService.NotificationServiceApplication" />
+      <module name="NotificationService (2)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.niir.NotificationService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestaurantServicesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.foody.restaurantServices.RestaurantServicesApplication" />
+      <module name="restaurant-Services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.foody.restaurantServices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServicesApplication" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="foodieapp.UserServices.UserServicesApplication" />
+      <module name="User-Services" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="foodieapp.UserServices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.NotificationServiceApplication" />
+      <item itemvalue="Application.RestaurantServicesApplication" />
+      <item itemvalue="Application.AuthServicesApplication" />
+      <item itemvalue="Application.UserServicesApplication" />
+      <item itemvalue="Application.EurekaServerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NotificationServiceApplication" />
+        <item itemvalue="Application.UserServicesApplication" />
+        <item itemvalue="Application.AuthServicesApplication" />
+        <item itemvalue="Application.EurekaServerApplication" />
+        <item itemvalue="Application.RestaurantServicesApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="257a382a-5b11-4098-9b1b-c94216c4504e" name="Changes" comment="" />
+      <created>1676440206556</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676440206556</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FoodieApp_BackendApp$EurekaServerApplication.ic" NAME="EurekaServerApplication Coverage Results" MODIFIED="1677243938581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.niit.EurekaServer.*</FILTER>
+    </SUITE>
+  </component>
+</project>

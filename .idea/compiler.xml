@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="EurekaServer" />
+        <module name="User-Services" />
+        <module name="NotificationService (2)" />
+        <module name="auth-services" />
+        <module name="ApiGateWayService" />
+        <module name="restaurant-Services" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ApiGateWay" target="19" />
+      <module name="Capstone-Project" target="19" />
+      <module name="CustomerService" target="19" />
+      <module name="FoodyApp" target="1.8" />
+      <module name="FoodyRestaurants" target="19" />
+      <module name="NotificationService" target="11" />
+      <module name="NotificationService (1)" target="11" />
+      <module name="RestaurantAdmin" target="19" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateWay" options="-parameters" />
+      <module name="ApiGateWayService" options="-parameters" />
+      <module name="Capstone-Project" options="-parameters" />
+      <module name="CustomerService" options="-parameters" />
+      <module name="EurekaServer" options="-parameters" />
+      <module name="FoodyRestaurants" options="-parameters" />
+      <module name="NotificationService" options="-parameters" />
+      <module name="NotificationService (1)" options="-parameters" />
+      <module name="NotificationService (2)" options="-parameters" />
+      <module name="RestaurantAdmin" options="-parameters" />
+      <module name="User-Services" options="-parameters" />
+      <module name="auth-services" options="-parameters" />
+      <module name="restaurant-Services" options="-parameters" />
+    </option>
+  </component>
+</project>
