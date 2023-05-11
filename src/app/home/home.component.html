@@ -1,0 +1,73 @@
+<div class="containar-fluid" >
+  <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">          
+<header class="intro-header">
+  <div class="view jarallax" data-jarallax='{"speed": 0.2}' id="bg">
+    <div class="full-bg-img mask rgba-black-light">
+      <div class="container flex-center">
+        <div class="row pt-5 mt-3 w-100">
+          <div class="col-md-12">
+            <div class="text-center">
+              <!-- <form class="form-inline d-flex" >                  
+                <input class="form-control form-control-sm ml-2 w-15" type="text" placeholder="Search"
+                  aria-label="Search"><mat-icon (click)="searchByCity()" >search</mat-icon>
+              </form> -->
+             
+              <h2 class=" text-light font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s">
+                Find the best <br><strong> Restaurants, cafés and bars</strong> in India</h2>
+              <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+              <img src="../../assets/logo/logo2.png"  id="myImg">
+              <!-- <h5 class="font-up  white-text wow fadeInDown text-light" data-wow-delay="0.4s"><strong>FOODY</strong></h5> -->
+              <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+                     
+                  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+          </div>
+      </div>
+  </div>
+        
+      
+<!-- ------------------------------------------------------------ -->
+<div class="containar-fluid">
+<div class="row">
+  <div class="col-lg-12 text-center">
+    <h1>Find The Best Restaurants </h1>
+    <div class="content ">
+      <div fxLayout="row wrap" fxLayoutGap="3em grid" >
+       <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="43%" *ngFor="let restauransts_data of All_restauerstsData | filter:searchKey:'restaurantLocation'">
+          <mat-card class="mat-elevation-z4 text-center mt-5 ms-5 card mb-1"  [routerLink]="['/all-restaurant/'+restauransts_data.restaurantId]" >
+        
+          <img mat-card-image [src]="'data:image/jpeg;base64,' +restauransts_data.picByte" alt="" class="images">
+            <div  class="mytitle d-flex ">
+              <mat-card-title class="name" >{{restauransts_data.restaurantName}}</mat-card-title> 
+            <samp class="space"></samp> 
+            <div class="bg-success d-flex rounded-pil subtitle mt-1 me-3">
+            <mat-card-subtitle class=" rating mt-1 ms-3">{{restauransts_data.restaurant_rating}}/10 <mat-icon class="grade">grade</mat-icon></mat-card-subtitle>
+           
+          </div>
+         
+            </div>
+        <div class="d-flex mt-2 mb-2 ms-2 me-5">
+          <mat-card-subtitle class="veg">{{restauransts_data.typeOfRestaurant}} </mat-card-subtitle>
+          <samp class="space"></samp> 
+           <!-- <mat-card-subtitle>{{restauransts_data.restaurantLocation}}</mat-card-subtitle> -->
+          <mat-card-subtitle class="add">{{restauransts_data.addressOfRestaurant}}</mat-card-subtitle>
+        </div>
+     <mat-card-subtitle>{{restauransts_data.restaurantLocation}}</mat-card-subtitle>
+    
+      
+      <!-- <button class="btn btn-primary" [routerLink]="['/all-restaurant/'+restauransts_data.restaurantId]">Cuisions</button> -->
+          </mat-card>
+       </div>
+      </div>
+      </div>  
+  </div>
+</div>
+
+</div>

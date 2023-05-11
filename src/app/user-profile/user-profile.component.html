@@ -1,0 +1,40 @@
+
+<div class="containar">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-control text-center">
+            <div class=" bg-light ">
+                <div class="col-2"><button class="btn btn-primary" routerLink="/user-dashboard">Back</button></div>
+
+                <h2>User Bio-Data</h2>
+              
+            </div> 
+            <div class="userCard">
+                <div class="card" style="width:600px">
+                    <img  class="card-img-top" [src]="'data:image/jpeg;base64,'+myUserProfile?.profilePicture" alt="userImg" >
+                    <div class="card-body">
+                      <h4 class="card-title">Name : {{myUserProfile?.firstName}} {{myUserProfile?.lastName}}</h4>
+                      <p class="card-text">User-Id : {{email_id}}</p>
+                      <!-- <p class="card-text">Password : {{myUserProfile?.password}} </p>  -->
+                    </div>  
+                      <div class="d-flex gap-5  card-footer">
+                        <button class="btn btn-primary" (click)="getFavCuisine()" >Show Fav-Cuisine</button>
+                        <button class="btn btn-dark" routerLink="/address-list">Show-your Address</button>
+
+                        <button class="btn btn-primary" routerLink="/fav-retaurrant">Show Fav-Restaurant</button>
+                        <button class="btn btn-success" routerLink="/order-List">Your Order Cart</button>
+
+                      </div> 
+                    </div>
+                  </div>
+            </div>
+           
+                  
+            </div>
+        
+         
+        
+
+        </div>
+</div>
+<!-- </div> -->

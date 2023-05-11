@@ -1,0 +1,209 @@
+<!-- <div class="containar-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+              <h1>Your Cart Added Items</h1>
+              <div class="content ">
+                <div fxLayout="row wrap" fxLayoutGap="3em grid" >
+                 <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="43%" *ngFor="let restauransts_data of restaurantsList">
+                    <mat-card class="mat-elevation-z4 pt-2 text-center mt-5"   >
+                    <mat-card-header>
+                        <p>{{restauransts_data.restaurantId}} </p>
+                        <mat-card-title class="p-4">{{restauransts_data.restaurantName}}</mat-card-title>  
+                    </mat-card-header>
+                    <img mat-card-image [src]="'data:images/jpeg;base64,' + restauransts_data.picByte" alt="" >
+                               
+                <mat-card-content>
+                     <h4 class="p-2">Restaurants Details </h4> -->
+                <!-- <hr>
+                    <p>{{restauransts_data.restaurant_rating}}</p>
+                    <p>{{restauransts_data.typeOfRestaurant}}  </p>
+                    <p>{{restauransts_data.addressOfRestaurant}}  </p>
+                    <p>{{restauransts_data.restaurantLocation}}  </p>
+                </mat-card-content>
+                <hr>
+                <div class="col-12 d-flex">
+                    <div class="col-6">
+                       
+                            <mat-icon mat-icon-color="red" (click)="removeItemFromCart(restauransts_data)">delete</mat-icon>
+                         <mat-icon mat-icon-color="red" (click)="addToFav_Rest(restauransts_data.rest)" >favorite</mat-icon>
+                         <button class="btn btn-dark p-2" (click)="fav_rest(restauransts_data)" >addToFav</button>
+                    </div>
+          
+                </div>
+        
+            </mat-card>
+        
+                 </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+<!-- 
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="  p-3">   
+                <div class="content">
+                    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                      <div fxFlex="50%"   fxFlex.xs="100%" fxFlex.sm="50%" *ngFor="let restauransts_data of restaurantsList ">
+                        <mat-card class="mat-elevation-z4 text-right">
+                          <mat-card-header >
+                            <mat-card-title>{{restauransts_data.cuisineName}}</mat-card-title>
+                          </mat-card-header >
+                          <img  mat-card-image [src]="'data:image/jpeg;base64,' +restauransts_data.image" alt="" class="image2">
+                          <mat-card-content>
+                            <p> {{restauransts_data.cuisineDescription}}  </p>
+                            <p>Price : ${{restauransts_data.price}} </p> 
+                          </mat-card-content>
+                          <mat-card-actions class="fav  col-lg-12">
+                            <div class="fav1  col-lg-6">
+                              <button mat-icon-button  (click)="addFavCuisineData(restauransts_data)" > 
+                                <mat-icon  >favorite</mat-icon>
+                            </button> 
+                                <button mat-icon-button  (click)="goToLoginPage()" > 
+                                  <mat-icon class="i1" >shopping_cart</mat-icon>
+                              </button>                     
+                            </div>
+                            <div class="fav2  col-lg-6">
+                                <button mat-icon-button routerLink="/">
+                                    <mat-icon class="i2">forward</mat-icon>
+                                </button>
+                               
+                              <mat-icon mat-icon-color="red" (click)="removeItemFromCart(restauransts_data)">delete</mat-icon>
+                              <mat-icon mat-icon-color="red" (click)="addToFav_Rest(restauransts_data.rest)" >favorite</mat-icon>
+                            </div>
+                            
+                          </mat-card-actions>
+                        </mat-card>
+                      </div>
+                    </div>
+                    </div> 
+            </div> 
+
+        </div>
+    </div>  
+</div> -->
+<!-- ----------------------------------------------- -->
+<!-- <div class="float-end  ">
+  <button class="btn btn-light" (click)="totalAmountGet()" >Total Now</button>
+ <h3 class="card-header">Total Amount</h3>
+  <h4>{{TotalAmount}} </h4>
+</div>
+<div class="float-end card">
+  <h3 class="card-header">Quantity</h3> -->
+  <!-- <input type="number" {{qty}} placeholder="quantity"> -->
+   
+ <!-- </div> -->
+<!-- <div class=" text-center  d-flex"> 
+  <div class="content m-4">
+      <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="60%"  class="mt-2"  fxFlex.xs="100%" fxFlex.sm="50%" *ngFor="let restauransts_data of restaurantsList ">
+          <mat-card class="mat-elevation-z4 card text-right">
+              <mat-card-header>
+              <img  class="rounded float-start myimg pb-2" mat-card-image [src]="'data:image/jpeg;base64,' +restauransts_data.image" alt="" >
+              <div class="mytitle mt-4 ms-5">
+              <mat-card-title class="title">{{restauransts_data.cuisineName}} </mat-card-title>
+              <mat-card-subtitle class="subtitle pt-2">{{restauransts_data.cuisineDescription}} </mat-card-subtitle>
+              <mat-card-subtitle class="subtitle  p-1">Price : Rs {{restauransts_data.price}} /-</mat-card-subtitle>
+              <div class="d-flex  justify-content-between">
+        
+                <button mat-icon-button routerLink="/">
+                  <mat-icon class="i2 text-success myicon">forward</mat-icon>
+              </button>
+              <button mat-icon-button  (click)="addFavCuisineData(restauransts_data)" > 
+                <mat-icon class="text-danger " >favorite</mat-icon>
+            </button>
+            <button mat-icon-button (click)="removeItemFromCart(restauransts_data)">
+              <mat-icon mat-icon-color="red" >delete</mat-icon>
+
+            </button> 
+
+          </div>
+            </div>
+            </mat-card-header>
+          </mat-card>  
+        </div>
+      </div>
+      </div> 
+</div> -->
+      <!-- <button mat-icon-button  (click)="addFav(restauransts_data)" >
+                    <mat-icon class="i1 text-primary myicon" >shopping_cart</mat-icon>
+                </button>  -->
+
+ <div *ngIf="restaurantsList.length<1">
+ <div class="col-lg-12">
+  <div class="card mt-5">
+    <div class="card-header">
+      <h1> This Card is Empty ! Please Add Some Item</h1> 
+
+    </div>
+    <div class="card-body">
+           <img src="../../assets/logo/logo2.png" alt="logo" style="max-width: 500px;">
+    </div>
+  </div>
+ 
+ <button class="btn btn-primary" routerLink="/user-dashboard">Add Items</button>
+ </div>
+ </div>
+
+<div class="container" *ngIf="restaurantsList.length>0">
+<div class="row">
+  <div class="col-lg-12">
+    <table class="table table-bordered table-striped  p-5 mt-3" >
+      <thead>
+        <tr>
+          <!-- <th scope="col">#</th> -->
+          <th >Cusisine-Image</th>
+          <th scope="col">Cuisine-Name</th>         
+          <th scope="col">Description</th>
+          <th scope="col">Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Remove-Item</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+          
+              <tr *ngFor="let fav of restaurantsList; index as i">
+                  <!-- <th scope="row"></th> -->
+                  <td><img  class="rounded float-start myimg pb-2" mat-card-image [src]="'data:image/jpeg;base64,' +fav.image" alt="" > </td>                             
+                  <td>{{fav?.cuisineName}}</td>
+                  <td>{{fav?.cuisineDescription}}</td>
+                  <td>{{fav?.price}}</td>
+
+                  <td class="d-flex">
+                    <button mat-icon-button   (click)="plus(fav)"><mat-icon  >add_circle_outline</mat-icon></button>
+              
+                    <input type="text" [value]="fav.qty">
+                  <button mat-icon-button  (click)="removeitem(fav)"><mat-icon >remove_circle_outline</mat-icon></button>
+                  </td>
+                  <!-- <td><button mat-icon-button (click)="add(fav)"><mat-icon  >add_circle_outline</mat-icon></button>
+                    <input type="number" class="qty" [value]="fav.qty">
+                     <button mat-icon-button (click)="removeitem(fav)"><mat-icon >remove_circle_outline</mat-icon> </button></td> -->
+                   <td><strong>{{fav?.total}}</strong></td>
+                  <td>
+                    <button mat-icon-button  (click)="removeItemFromCart(fav)">
+                      <mat-icon >delete</mat-icon>       
+                    </button>
+                  </td>
+                  <td ><button class="btn btn-success" (click)="goToCheckOut(fav)"></button> check-Out</td>
+                </tr>     
+                <tr>
+                  <th colspan="5">Total-Amount</th>
+                  <td colspan="2">{{TotalAmount}}rs</td>
+                </tr>
+                <tr>
+                  <td colspan="4"></td>
+                  <td ><button class="btn btn-danger" (click)="emptyCart()"></button> Empty-Card</td>
+                  <td ><button class="btn btn-primary" routerLink="/user-dashboard"></button> Add More</td>
+                  <!-- <td ><button class="btn btn-success" (click)="goToCheckOut(fav)"></button> check-Out</td> -->
+                </tr>             
+      </tbody>
+    </table>
+
+  </div>
+</div>
+</div>

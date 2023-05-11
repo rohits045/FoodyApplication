@@ -1,0 +1,117 @@
+
+<nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light" id="header">
+  <div class="container-fluid">
+      <span  routerLink="home"><img src="../../assets/logo/logo2.png" id="logo"></span>
+      <div class="myDiv">
+        <div class="d-flex input-group">
+          <input
+            type="search"
+            class="form-control rounded"
+            placeholder="Search By City"
+            aria-label="Search" [ngModel]="searchTerm" (keyup)="search($event)"
+          />
+          <span class="input-group-text border" id="search-addon">
+            <mat-icon>search</mat-icon>
+          </span>
+      </div>
+      </div>
+<ul class="nav nav-pills mb-3 mt-auto mb-2 mb-lg-0" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+   
+    <button   class=" btn" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"routerLink="/"><i class="fa fa-home"></i> Home</button>
+  </li>
+  <li class="nav-item" role="presentation"*ngIf="!loggedIn()">
+    <button  class="btn " id="pills-profile-tab" data-bs-toggle="pill"routerLink="login" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Login</button>
+  </li>
+ 
+  <li class="nav-item" role="presentation">
+
+    <button class="btn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"routerLink="recipes">Recipes</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="btn" id="pills-contact-tab"*ngIf="!loggedIn()" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"routerLink="add-your-restaurant">Add Your Restaurant</button>
+  </li>
+  
+  <div class="dropdown  mx-3 profile" *ngIf="loggedIn()"  >
+    <img  [src]="'data:images/*;base64,'+ userData?.profilePicture" alt="profile"  class="dropdown-toggle " id="user_img"  data-bs-toggle="dropdown">
+
+    <button  class="btn btn-light  dropdown-toggle" data-bs-toggle="dropdown">
+      Hi - {{userData?.firstName}}
+    </button>
+
+    <ul class="dropdown-menu ">
+      <li><a class="dropdown-item" routerLink="user-profile" *ngIf="loggedIn()">My Profile</a></li>
+      <li><a class="dropdown-item" href="">Setting</a></li>
+      <li><a  class=" dropdown-item" (click)="logoutAccount()" ><span class="nav-item"  *ngIf="loggedIn()" >Logout</span></a>
+      </li>
+    </ul>
+  
+  </div>
+  <a class="nav-link " routerLink="/Add-To-Card" *ngIf="loggedIn()">
+    <span class="badge badge-pill bg-danger">{{totalItems}}</span>
+    <span><mat-icon >shopping_cart</mat-icon> </span>
+  </a>
+</ul>
+
+
+
+
+
+<!-- ============================================= -->
+
+<!-- <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light" id="header">
+    <div class="container-fluid">
+        <span  routerLink="home"><img src="../../assets/logo/logo2.png"></span>
+
+        <ul class="nav nav-tabs mt-auto mb-2 mb-lg-0" id="myTab" role="tablist" >
+          <li class="nav-item" role="presentation">
+            <a  class="nav-link active" aria-current="page" routerLink="/"><span class = "nav-item mx-3">Home</span></a>
+
+          </li>
+          <li class="nav-item" *ngIf="!loggedIn()">
+           
+            <a style="--clr:#1e9bff" class="nav-link " routerLink="login"><span class="nav-item">Login</span></a>
+
+          </li>
+        </ul>
+        <div class="myDiv">
+          <div class="d-flex input-group w-auto  searchcontant">
+            <input
+              type="search"
+              type="search"
+              class="form-control rounded"
+              placeholder="Search By City"
+              aria-label="Search" [ngModel]="searchTerm" (keyup)="search($event)"
+            />
+            <span class="input-group-text border-0" id="search-addon">
+              <mat-icon>search</mat-icon>
+            </span>
+        </div>
+        </div>
+        <a  class="nav-link " routerLink="recipes" ><span class="nav-item">Recipes</span></a>
+
+        <a *ngIf="!loggedIn()" class="nav-link " routerLink="add-your-restaurant" ><span class="nav-item">Add resturant</span></a>
+            <a class="nav-link " routerLink="/Add-To-Card">
+                <span class="badge badge-pill bg-danger">{{totalItems}}</span>
+                <span><mat-icon >shopping_cart</mat-icon> </span>
+              </a>
+
+
+            <div class="dropdown  mx-3 profile" *ngIf="loggedIn()"  >
+              <img  [src]="'data:images/*;base64,'+ userData?.profilePicture" alt="profile"  class="dropdown-toggle "  data-bs-toggle="dropdown">
+
+              <button  class="btn btn-light  dropdown-toggle" data-bs-toggle="dropdown">
+                Hi - {{userData?.firstName}}
+              </button>
+
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" routerLink="user-profile" *ngIf="loggedIn()">My Profile</a></li>
+                <li><a class="dropdown-item" href="">Setting</a></li>
+                <li><a  class=" dropdown-item" (click)="logoutAccount()" ><span class="nav-item"  *ngIf="loggedIn()" >Logout</span></a>
+                </li>
+              </ul>
+            </div> -->
+
+
+      </div>
+  </nav>

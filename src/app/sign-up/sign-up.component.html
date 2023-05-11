@@ -1,0 +1,130 @@
+<!-- <div class="containar">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <form [formGroup]="SignUp" (ngSubmit)="addUser()"> 
+            <mat-form-field appearance="fill">
+                <mat-label>Enter the Email</mat-label>
+                <input matInput type="email" placeholder="Email" formControlName="email">
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Enter the FirstName</mat-label>
+                <input matInput type="text" placeholder="FirstName" formControlName="firstName">
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Enter the LastName</mat-label>
+                <input matInput type="text" placeholder="LastName" formControlName="lastName">
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Enter the Password</mat-label>
+                <input matInput type="password" placeholder="Password" formControlName="password">
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Enter the Profile Image</mat-label>
+                <input matInput type="file" placeholder="Profile Image" formControlName="userPic">
+              </mat-form-field>
+              <button click="Submit">Sign-Up</button>
+            </form>
+        </div>
+    </div>
+</div> -->
+
+ <!-- <div class="container p-5">
+    <div class="row ">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center ">   
+    <form [formGroup]="UserSignUp" (ngSubmit)="addUser()" class="form-control text-center p-2"> 
+        <h2>Please Create New Account For User</h2>
+        <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+        <div class="p-3 input-group">
+            <mat-label class="input-group-text">@ </mat-label>
+            <input class="form-control" matInput type="email" placeholder="Email" formControlName="emailId">
+        </div>
+       
+        <div class="p-3 input-group">
+            <input matInput class="form-control" type="text" placeholder="FirstName" formControlName="firstName">
+            <mat-label class="input-group-text">Enter the FirstName : </mat-label>
+        </div>     
+        
+        <div class="p-3 input-group">
+            <mat-label class="input-group-text">Enter the LastName  </mat-label>
+            <input matInput class="form-control" type="text" placeholder="LastName" formControlName="lastName">
+        </div> 
+     
+        <div class="p-3 input-group">
+            <input matInput class="form-control" type="password" placeholder="Password" formControlName="password">
+            <mat-label class="input-group-text">Enter the Password  </mat-label>
+        </div>      
+        <div class="p-3 input-group">
+            <mat-label class="input-group-text">Enter the Profile Image  </mat-label>
+            <input class="form-control"  type="file" placeholder="Profile Image" formControlName="profilePicture">
+        </div>  
+        <button class="btn btn-success col-lg-6" type="submit">User-Sign-Up</button>
+        <button class="btn btn-danger col-lg-6" type="reset">Reset</button>
+    </form>
+</div> 
+</div>
+</div> -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+
+
+<!-- private   String email;
+  private   String firstName;
+  private   String lastName;
+  private   long mobileNo;
+  private   String password;
+  private byte[] userPic;
+  private String fileName; -->
+  <body>
+    <div class="content">
+        <div class="container">
+            <div class="heading">SIGN UP</div>
+            <form [formGroup]="UserSignUp" >
+                <div class="card-details">
+                    <div class="mb-3">
+                        <img width="120" height="120" class="margin-top mat-elevation-z1"
+                            [src]="userFile2.url ?? '/assets/images/image-placeholder.png'" />
+                        <svg (click)="inputField.click()" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-camera2 icon" viewBox="0 0 16 16" style="color: #f79f08;">
+                            <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z" />
+                            <path
+                                d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z" />
+                        </svg>
+                    </div>
+                    <input #inputField hidden type="file" (change)="onChangeFileFiled($event)" />
+                    <div class="card-box">
+                        <span class="details">Email ID</span>
+                        <input type="email" placeholder="Enter emailId" formControlName="emailId" class="form-control" >
+                        <small *ngIf="UserSignUp.get('emailId')?.touched && UserSignUp.get('emailId')?.invalid"
+                            style="color:red;font-size: large;">Please enter  Email id</small>
+                    </div>
+                    <div class="card-box">
+                        <span class="details">First Name</span>
+                        <input type="text" placeholder="Enter First Name" formControlName="firstName"
+                            class="form-control">
+                        <small *ngIf="UserSignUp.get('firstName')?.touched && UserSignUp.get('firstName')?.invalid"
+                            style="color:red;font-size: large;">Please enter  First Name</small>
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" placeholder="Enter Last Name" formControlName="lastName"
+                            class="form-control">
+                        <small *ngIf="UserSignUp.get('lastName')?.touched && UserSignUp.get('lastName')?.invalid"
+                            style="color:red;font-size: large;">Please enter  Last Name</small>
+                    </div>                       
+                    <div class="card-box">
+                        <span class="details">Password</span>
+                        <input type="password" placeholder="Password" formControlName="password" class="form-control">
+                        <small *ngIf="UserSignUp.get('password')?.touched && UserSignUp.get('password')?.invalid"
+                            style="color:red;font-size: large;">Please enter  Password</small>
+                    </div>
+       
+                </div>
+
+                <div class="button">
+                    <input [disabled]="UserSignUp.invalid" type="submit" (click)="signUp(UserSignUp)">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

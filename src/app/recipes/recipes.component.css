@@ -1,0 +1,25 @@
+
+.content{
+    padding: 16px;
+/* background-color: rgb(2, 2, 2); */
+}
+#restaurantBg{
+    background-image: url(../../assets/vegetables-set-left-black-slate.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    /* margin-top: 6em; */
+
+}
+mat-card{
+    box-shadow: -2px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
+
+}
+.letter{
+    font-size: 1.2em;
+    letter-spacing: 10px;
+    padding-top: 5em;
+    overflow-y: hidden;
+
+}

@@ -1,0 +1,97 @@
+
+
+
+
+
+
+            <body>
+                <!-- <div class="container p-1 " > -->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+            
+                <div class="content">
+                    <div class="col-lg-6">
+                        <img src="../../assets/dash-board/scooter.avif" alt="">
+                        <h2>Mention Some Delivery Points</h2>
+                        </div>
+                    <div class="container mx-5 ">
+                        <div class="heading ">Order Place</div>
+                        <form [formGroup]="Address" #SaveAddress="ngForm" (ngSubmit)="add_Address(Address)">
+                            <div class="card-details d-block">                                      
+                                <div class="card-box ">
+                                    <span class="details">HouseNo</span>                                 
+                                    <input type="text"  placeholder="Enter HouseNo" formControlName="houseNo" class="form-control">
+                                    <small *ngIf="Address.get('houseNo')?.touched && Address.get('houseNo')?.invalid"
+                                    style="color:red;font-size: small;">Please enter HouseNo</small>
+                                </div>
+                                <div class="card-box ">
+                                    <span class="details">Street</span>                                 
+                                    <input type="text"  placeholder="Enter Street " formControlName="street" class="form-control">
+                                    <small *ngIf="Address.get('street')?.touched && Address.get('street')?.invalid"
+                                        style="color:red;font-size: small;">Please enter Valid Street</small>
+                                </div>                                                      
+                                <div class="card-box ">
+                                    <span class="details">City</span>                                 
+                                    <input type="text"  placeholder="Enter City " formControlName="city" class="form-control">
+                                    <small *ngIf="Address.get('city')?.touched && Address.get('city')?.invalid"
+                                        style="color:red;font-size: small;">Please enter Valid City</small>
+                                </div> 
+                                <div class="card-box ">
+                                    <span class="details">Pincode</span>                                 
+                                    <input type="text"  placeholder="Enter City Pincode" formControlName="pinCode" class="form-control">
+                                    <small *ngIf="Address.get('pinCode')?.touched && Address.get('pinCode')?.invalid"
+                                        style="color:red;font-size: small;">Please enter Valid City</small>
+                                </div> 
+                            </div>
+                     
+                        <div class="button">
+                          
+                            <button class="btn btn-success col-6" [disabled]="SaveAddress.invalid" type="submit">Add Address</button>
+                            <button class="btn btn-danger col-6" type="reset">Reset</button>
+                        </div>                                                                                         
+                        </form>
+                        <div >
+                            <!-- <h2>If User have not Register Account ! Please Sign-Up now!</h2> 
+                            <button class="btn btn-success col-6" type="submit">Add Address</button> -->
+                         </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+            </body>      
+               <!-- <div class="col-lg-6">
+                <form [formGroup]="Address" (ngSubmit)="addAddress()" class="form-control text-center p-5" >
+                    <h2>Please Enter the Shipping Address</h2>
+                    <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+                    <div class="p-3 input-group">
+                        <label  class="input-group-text">HouseNo</label>
+                        <input type="text" class="form-control" placeholder="HouseNo" formControlName="houseNo">
+                    </div>     
+                      <div class="p-3 input-group">
+                        <input type="text" class="form-control" placeholder="street" formControlName="street">
+                        <label class="input-group-text" for="street">street</label>
+                      </div>
+            <div class="p-3 input-group">
+                <label class="input-group-text" for="city">city</label>
+                <input type="text" class="form-control" placeholder="city" formControlName="city"> 
+            </div>        
+            <div class="p-3 input-group">
+                <input type="text" class="form-control" placeholder="pinCode" formControlName="pinCode"> 
+                <label class="input-group-text" for="pinCode">pinCode</label>
+            </div>  
+            <button class="btn btn-success col-6" type="submit">Add Address</button>
+            <button class="btn btn-danger col-6" type="reset">Reset</button> 
+                </form>
+               </div> -->
+            
+ 
+
+
+
+<!-- @Id
+private String houseNo;
+private String street;
+private String city;
+private String pinCode;
+} -->

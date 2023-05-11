@@ -1,0 +1,55 @@
+<div class="containar-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-12 col-md-12" id="restaurantBg">
+                <div class="text-center text-white mt-5 letter">
+                    <h1 >See What's New</h1>
+                    <p>Serve Up Something Sweet</p>
+                </div>      
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <div class="container-fluid ">
+    <div class="row">
+        <div class="col-lg-12 col-md-12" id="restaurantBg">
+            <div class="text-center text-white mt-5 letter">
+                <h1 >See What's New</h1>
+                <p>Serve Up Something Sweet</p>
+            </div>      
+        </div>
+       
+    </div> -->
+
+
+
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-lg-12">          
+            <div class="content ">
+                <div fxLayout="row wrap" fxLayoutGap="3em grid" >
+                 <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let recipes_data of searchRecipes_Data">
+                    <mat-card class="mat-elevation-z4 pt-2 text-center mt-5">
+                    <mat-card-header>
+                        <mat-card-title class="p-4">{{recipes_data.title}}</mat-card-title>  
+                    </mat-card-header>
+                    <img mat-card-image src="{{recipes_data.image}}"> 
+                <mat-card-content>
+                    <h4 class="p-2">Ingredients of Recipe</h4>
+                <hr>
+                    <p>{{recipes_data.ingredients}}</p>
+                </mat-card-content>
+                <hr>
+                    </mat-card>
+                 </div>
+                </div>
+                </div>  
+        </div>
+    </div>
+</div>
+  
+          

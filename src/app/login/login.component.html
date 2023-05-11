@@ -1,0 +1,75 @@
+<!-- <div id="loginView">
+    <div class="container p-5" >
+        <div class="row">
+            <div class="col-lg-12 float-right">    -->
+                
+                 <!-- <div class="col-lg-6"> -->
+                    
+                    <body>
+                        <div class="content">
+                            <div class="container mx-5 ">
+                                <div class="heading">Login Here</div>
+                                <form [formGroup]="LoginData" novalidate>
+                                    <div class="card-details d-block">                                      
+                                        <div class="card-box ">
+                                            <span class="details">Email ID</span>
+                                            <input type="email"  placeholder="Enter Email" formControlName="emailId" class="form-control">
+                                            <small *ngIf="LoginData.get('emailId')?.touched && LoginData.get('emailId')?.invalid"
+                                                style="color:red;font-size: large;">Please enter Valid Email id</small>
+                                        </div>
+                                                                                                   
+                                        <div class="card-box">
+                                            <span class="details">Password</span>
+                                            <input type="password" placeholder="Password" formControlName="password" class="form-control">
+                                            <small *ngIf="LoginData.get('password')?.touched && LoginData.get('password')?.invalid"
+                                                style="color:red;font-size: large;">Please enter Valid Password</small>
+                                        </div>
+                           
+                                    </div>
+                             
+                                <div class="button">
+                                  
+                                     <input [disabled]="LoginData.invalid" type="submit" (click)="Login()" [routerLink]="['/user-dashboard'+emailId]">                                                                   
+                                </div>                                                                                         
+                                </form>
+                                <div class="mt-4">
+                                    <h5>If User have not Register Account ! Please Sign-Up now!</h5> 
+                                    <button class="btn btn-dark px-5 p-1 rounded" (click)="goToSignUp()">Sign-Up</button>               
+                                </div> 
+                            </div>
+                        </div>
+                    </body>      
+           
+                <!-- <div class="col-lg-6">
+       <img src="../../assets/brooke-lark-08bOYnH_r_E-unsplash.jpg" alt="" >
+                </div> -->
+                <!-- <div class="col-lg-6 " >
+                    <form class="form-control text-center p-5"  [formGroup]="LoginData"  >
+                        <h2>Please Login Existing Acount Holder</h2>
+                        <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+    
+                        <div class="p-3 input-group">
+                            <mat-label class="input-group-text">@</mat-label>
+                            <input mat-input class="form-control" type="email" placeholder="Email" formControlName="emailId">
+                        </div> 
+                            <div class="p-3 input-group">
+                                <input mat-input class="form-control" type="password" placeholder="Password" formControlName="password" >
+    
+                               <mat-label class="input-group-text">Enter your Password</mat-label>
+                                </div> 
+                                  <br>
+                                <button class="btn btn-success col-6" (click)="Login()" type="submit">Login</button>
+                                <button class="btn btn-danger col-6" type="reset">Reset</button>                                         
+                    </form>
+                </div>                           -->
+                    <!-- </div>       
+                    <div class="col-lg-6">
+                        <h2>If User have not Register Account ! Please Sign-Up now</h2>  
+                        <button (click)="goToSignUp()">Sign-Up</button>                 
+                    </div>  
+                    
+            </div>
+        </div>
+</div> -->
+
+

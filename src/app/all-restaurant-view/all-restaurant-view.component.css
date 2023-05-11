@@ -1,0 +1,83 @@
+.image2{
+    max-width: 900px;
+    max-height: 500px;
+}
+.image{
+    max-width: 300px;
+    max-height: 200px;
+}
+.fav{
+    text-align: center;
+    /* font-size: 2em; */
+}
+.fav2{
+ /* margin-left:4em; */
+ color: red;
+}
+
+.fav1{
+    /* margin-left:3em; */
+    font-weight: 400;
+    color: green;
+   }
+/* ----------------------------------------------------------- */
+.image2{
+    max-width: 900px;
+    max-height: 500px;
+}
+.image{
+    max-width: 300px;
+    max-height: 200px;
+}
+.fav{
+    text-align: center;
+    /* font-size: 2em; */
+}
+.fav2{
+ /* margin-left:4em; */
+ color: red;
+}
+
+.fav1{
+    /* margin-left:3em; */
+    font-weight: 400;
+    color: green;
+   }
+   .myimg
+   {
+    width: 250px;
+    height: 180px;
+   }
+   .title
+   {
+    font-weight: bolder;
+    font-size: 40px;
+   }
+   .card
+   {
+    /* border: 1px solid red; */
+    transition: all 0.4s; 
+    border-radius: 5%;
+   }
+   .mytitle
+   {
+    font-family: "Metropolis";
+   }
+   .card:hover
+   {
+    transform: scale(1.1);
+    box-shadow:  5px 15px 15px rgb(133, 129, 133);
+    transform: scale(1.1.5);
+   }
+   .myicon
+   {
+
+   font-size: larger;
+   /* transition: all 0.4s;  */
+   }
+   /* .myicon:hover
+   {
+    transform: scale(1.1);
+    box-shadow: 5px 15px 15px rgb(133, 129, 133);
+    transform: scale(1.1.5);
+   } */

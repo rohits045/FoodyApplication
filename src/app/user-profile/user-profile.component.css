@@ -1,0 +1,21 @@
+
+  /* .card{
+    text-overflow: clip;
+  } */
+  /* .images{
+    max-width: 250px;
+  } */
+  img{
+    border-radius: 10%;
+  }
+  .card{
+    box-shadow: 5px 15px 15px rgb(30, 27, 30);
+  }
+  .userCard{
+     text-align: center;
+     display: inline-block;
+  }
+  button{
+    font-size: 15px;
+
+  }
